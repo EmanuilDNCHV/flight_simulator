@@ -28,7 +28,7 @@ void welcome_message(void) {
     
     printf("Starting altitude: 3000 m\n");
     printf("Starting speed: 400 km/h\n");
-    printf("Starting heading: 150°\n\n");
+    printf("Starting heading: 150° (SOUTHEAST)\n\n");
     
     printf("Press Enter to start your flight...");
     getchar();
@@ -180,9 +180,9 @@ void display_artificial_horizon(double pitch, double altitude) {
     
     // Наклон
     printf("\n     ");
-    if (pitch > 0) printf("AIRCRAFT POINTING UP");
-    else if (pitch < 0) printf("AIRCRAFT POINTING DOWN");
-    else printf("AIRCRAFT LEVEL - BALANCED");
+    if (pitch > 0) printf("   AIRCRAFT POINTING UP");
+    else if (pitch < 0) printf("   AIRCRAFT POINTING DOWN");
+    else printf(" AIRCRAFT LEVEL - BALANCED");
     
     printf("\n=================================================\n");
     
