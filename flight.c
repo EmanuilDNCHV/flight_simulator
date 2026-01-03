@@ -28,7 +28,7 @@ void welcome_message(void) {
     
     printf("Starting altitude: 3000 m\n");
     printf("Starting speed: 400 km/h\n");
-    printf("Starting heading: 150°(SOUTHEAST)\n\n");
+    printf("Starting heading: 150° (SOUTHEAST)\n\n");
     
     printf("Press Enter to start your flight...");
     getchar();
