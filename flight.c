@@ -33,11 +33,6 @@ void welcome_message(void) {
     printf("Press Enter to start your flight...");
     getchar();
     printf("\n\nEngines starting...\n");
-    #ifdef _WIN32
-        Sleep(1000);
-    #else
-        sleep(1);
-    #endif
 }
 
 char get_input_char(void) {
