@@ -75,13 +75,6 @@ int main(void) {
             game_running = false;
         }
         
-        
-        #ifdef _WIN32
-            Sleep(150);
-        #else
-            usleep(150000);
-        #endif
-    }
     
     if (plane.fuel <= 0 && game_running) {
         game_over_message(3, &plane);  // Свършило гориво
